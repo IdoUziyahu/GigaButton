@@ -1,0 +1,49 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    padding: 0;
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body.activated {
+    background-image: url('./gigagif.gif');
+}
+
+button {
+    box-sizing: content-box;
+    padding: 0;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: .5rem solid rgb(255, 115, 115);
+    background-color: red;
+
+    transition: border .3s, background-color .3s;
+    cursor: pointer;
+    user-select: none;
+
+}
+button:hover {
+    border: .5rem solid rgb(255, 40, 40);
+    background-color: red;
+}
+body.activated > button {
+    opacity: 0;
+}
+button > img {
+    width: 20rem;
+    height: 20rem;
+    user-select: none;
+    pointer-events: none;
+}
