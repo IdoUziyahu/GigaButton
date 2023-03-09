@@ -1,4 +1,4 @@
-const audio = new Audio('./assets/songLoop.mp3')
+const audio = document.getElementById('giga-loop')
 const button = document.getElementById('giga-button')
 const body = document.getElementsByTagName('body')[0]
 
@@ -21,5 +21,4 @@ button.addEventListener('touchstart', enableSong);
 
 button.addEventListener('mouseup', disableSong);
 button.addEventListener('mouseout', disableSong);
-button.addEventListener('touchstop', disableSong);
-button.addEventListener('touchcancel', disableSong);
+button.addEventListener('touchend', disableSong);
