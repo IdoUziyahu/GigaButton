@@ -22,3 +22,9 @@ button.addEventListener('touchstart', enableSong);
 button.addEventListener('mouseup', disableSong);
 button.addEventListener('mouseout', disableSong);
 button.addEventListener('touchend', disableSong);
+
+
+document.getElementById('giga-start').addEventListener('click', (e)=> {
+    e.target.style.display = 'none';
+    button.style.display = 'block'
+})

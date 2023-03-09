@@ -29,6 +29,7 @@ body.activated {
 }
 
 #giga-button {
+    display: none;
     position: relative;
     box-sizing: content-box;
     padding: 0;
@@ -36,7 +37,7 @@ body.activated {
     height: 20rem;
     border-radius: 50%;
     overflow: hidden;
-    border: .5rem solid rgb(255, 115, 115);
+    border: .5rem solid rgb(172, 172, 172);
 
     transition: border .3s;
     cursor: pointer;
@@ -45,14 +46,25 @@ body.activated {
     background-image: url(./GIGACHAD.jpg);
     background-size: contain;
 
-}
-#giga-button:hover {
-    border: .5rem solid rgb(255, 40, 40);
-}
-#giga-button:focus {
+}#giga-button:focus {
     outline:0;
 }
 
 body.activated > #giga-button {
     opacity: 0;
+}
+
+#giga-start {
+    background-color: transparent;
+    border: .2rem solid #7f7f7f;
+    border-radius: 2rem;
+    padding: .5rem;
+    font-size: 3rem;
+    color: #7f7f7f;
+    cursor: pointer;
+}
+#giga-start:hover, 
+#giga-start:focus {
+    border-color:initial;
+    color: initial;
 }
