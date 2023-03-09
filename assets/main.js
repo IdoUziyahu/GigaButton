@@ -13,7 +13,6 @@ const disableSong = () => {
     audio.pause()
     audio.currentTime = 0;
     body.classList.remove('activated');
-
 }
 
 button.addEventListener('mousedown', enableSong);

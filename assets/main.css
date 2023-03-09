@@ -19,7 +19,8 @@ body.activated {
     background-image: url('./gigagif.gif');
 }
 
-button {
+#giga-button {
+    position: relative;
     box-sizing: content-box;
     padding: 0;
     width: 20rem;
@@ -27,23 +28,22 @@ button {
     border-radius: 50%;
     overflow: hidden;
     border: .5rem solid rgb(255, 115, 115);
-    background-color: red;
 
-    transition: border .3s, background-color .3s;
+    transition: border .3s;
     cursor: pointer;
     user-select: none;
 
+    background-image: url(./GIGACHAD.jpg);
+    background-size: contain;
+
 }
-button:hover {
+#giga-button:hover {
     border: .5rem solid rgb(255, 40, 40);
-    background-color: red;
 }
-body.activated > button {
+#giga-button:focus {
+    outline:0;
+}
+
+body.activated > #giga-button {
     opacity: 0;
-}
-button > img {
-    width: 20rem;
-    height: 20rem;
-    user-select: none;
-    pointer-events: none;
 }
