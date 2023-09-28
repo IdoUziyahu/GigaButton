@@ -1,3 +1,4 @@
+//we coding...
 const audio = document.getElementById('giga-loop')
 const button = document.getElementById('giga-button')
 const body = document.getElementsByTagName('body')[0]
